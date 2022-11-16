@@ -6,7 +6,7 @@ public class lab52 {
         int n = sc.nextInt();
         if (n > 0) {
             int count = 1;
-            int minimum = 345698789;
+            int minimum = Integer.MAX_VALUE;
             while (count <= n) {
                 int im = sc.nextInt();
                 if (im < minimum){

@@ -19,7 +19,7 @@ public class lab64 {
             } else if (enterednum == 1) {
                 System.out.println("Number '1' is neither prime nor non-prime");
             } else {
-                for (int del = 1; del < 1228767822; del++) {
+                for (int del = 1; del <= enterednum; del++) {
                     if (enterednum % del == 0) {
                         count++;
                     }

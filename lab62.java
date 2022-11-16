@@ -17,8 +17,8 @@ public class lab62 {
                 int dif = Math.abs(sumofpair2 - sumofpair);
                 if (dif > maxdif) {
                     maxdif = dif;
-                    sumofpair = sumofpair2;
                 }
+                sumofpair = sumofpair2;
                 count++;
             }
             if (maxdif == 0) {

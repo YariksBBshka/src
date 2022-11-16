@@ -6,7 +6,7 @@ public class lab51 {
         int n = sc.nextInt();
         if (n > 0) {
             int count = 1;
-            int maximun = -345698789;
+            int maximun = Integer.MIN_VALUE;
             while (count <= n) {
                 int im = sc.nextInt();
                 if (im > maximun){
