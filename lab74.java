@@ -1,23 +1,23 @@
-import javax.swing.*;
 import java.util.Scanner;
 
 public class lab74 {
-    public static long factorial(long num){
-        if (num < 0){
-            System.out.println("ERROR");
-            return 0;
+
+    static double factorial(double n) {
+        double result = 1;
+        if (n == 1 || n == 0) {
+            return result;
         }
-        if (num <= 1){
-            return 1;
-        }
-        return num * factorial(num - 1);
+        result = n * factorial(n-1);
+        return result;
     }
-    public static void main(String[] args) {
+
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        long n = sc.nextLong();
-        long k = sc.nextLong();
-        long sochi = factorial(n) / factorial(k);
-        long sochi2 = sochi / factorial(n - k);
-        System.out.println(sochi2);
+        double n = sc.nextDouble();
+        double k = sc.nextDouble();
+        double sochi = factorial(n) / factorial(n-k);
+        double sochi2 = sochi / factorial(k);
+        int sochi3 = (int) Math.ceil(sochi2);
+        System.out.println(sochi3);
     }
 }
