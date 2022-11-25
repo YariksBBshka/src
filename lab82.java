@@ -18,7 +18,14 @@ public class lab82 {
             }
         }
         String[] finalsarray = Arrays.copyOfRange(finals.split(" "), 1, finals.split(" ").length);
-        System.out.println(Arrays.toString(finalsarray));
+        String s = "";
+        for (int k = 0; k < finalsarray.length; k++) {
+            if (k == finalsarray.length - 1) {
+                s = s + finalsarray[k];
+            } else {
+                s = s + finalsarray[k] + " ";
+            }
+        }
+        System.out.println(s);
     }
 }
-// АЛЕКСАНДР ИГОРЕВИЧ, ПОМОГИТЕ!!!!!!!!!!!!

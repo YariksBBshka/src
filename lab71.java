@@ -15,6 +15,4 @@ public class lab71 {
         Scanner sc = new Scanner(System.in);
         isPalindrome(sc.nextLine().replaceAll(" ", ""));
     }
-
-
 }

@@ -20,6 +20,14 @@ public class lab83 {
             finalarray[0] = lastnum;
             count++;
         }
-        System.out.println(Arrays.toString(finalarray));
+        String s = "";
+        for (int k = 0; k < finalarray.length; k++) {
+            if (k == finalarray.length - 1) {
+                s = s + finalarray[k];
+            } else {
+                s = s + finalarray[k] + " ";
+            }
+        }
+        System.out.println(s);
     }
 }

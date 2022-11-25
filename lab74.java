@@ -15,6 +15,10 @@ public class lab74 {
         Scanner sc = new Scanner(System.in);
         double n = sc.nextDouble();
         double k = sc.nextDouble();
+        if((n<=0) || (k<=0)){
+            System.out.println("ERROR");
+            return;
+        }
         double sochi = factorial(n) / factorial(n-k);
         double sochi2 = sochi / factorial(k);
         int sochi3 = (int) Math.ceil(sochi2);
