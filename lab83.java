@@ -12,22 +12,27 @@ public class lab83 {
         }
         int count = 0;
         int numofrotations = sc.nextInt();
-        while (count < numofrotations) {
-            int lastnum = finalarray[finalarray.length - 1];
-            for (int i = finalarray.length - 1; i > 0; i--) {
-                finalarray[i] = finalarray[i - 1];
+        if (numofrotations >= 0) {
+            while (count < numofrotations) {
+                int lastnum = finalarray[finalarray.length - 1];
+                for (int i = finalarray.length - 1; i > 0; i--) {
+                    finalarray[i] = finalarray[i - 1];
+                }
+                finalarray[0] = lastnum;
+                count++;
             }
-            finalarray[0] = lastnum;
-            count++;
-        }
-        String s = "";
-        for (int k = 0; k < finalarray.length; k++) {
-            if (k == finalarray.length - 1) {
-                s = s + finalarray[k];
-            } else {
-                s = s + finalarray[k] + " ";
+            String s = "";
+            for (int k = 0; k < finalarray.length; k++) {
+                if (k == finalarray.length - 1) {
+                    s = s + finalarray[k];
+                } else {
+                    s = s + finalarray[k] + " ";
+                }
             }
+            System.out.println(s);
         }
-        System.out.println(s);
+        else {
+            System.out.println("ERROR");
+        }
     }
 }
