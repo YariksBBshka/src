@@ -8,10 +8,18 @@ public class lab81 {
         int data = Integer.parseInt(sc.nextLine());
         if (data > 0) {
             int[] vagon = new int[data];
-            int piev = Integer.parseInt(sc.nextLine());
+            int piev = Integer.parseInt(sc.nextLine().replaceAll(" ", ""));
             for (int i = 0; i < vagon.length; i++) {
-                int leftplaces = Integer.parseInt(sc.nextLine());
+                int leftplaces = Integer.parseInt(sc.nextLine().replaceAll(" ", ""));
+                if (leftplaces < 0){
+                    System.out.println("ERROR");
+                    System.exit(0);
+                }
                 vagon[i] = piev - leftplaces;
+                if (vagon[i] < 0){
+                    System.out.println("ERROR");
+                    System.exit(0);
+                }
             }
             for (int i = 0; i < vagon.length; i++) {
                 sum = sum + vagon[i];

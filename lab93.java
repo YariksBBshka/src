@@ -25,7 +25,12 @@ public class lab93 {
             }
             for (int i = 0; i < datanum; i++) {
                 for (int j = 0; j < datanum; j++) {
-                    System.out.printf(arrayofdata[i][j] + "\t");
+                    if (j == datanum - 1){
+                        System.out.printf(arrayofdata[i][j] + "");
+                    }
+                    else {
+                        System.out.printf(arrayofdata[i][j] + "\t");
+                    }
                 }
                 System.out.println();
             }

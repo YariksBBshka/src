@@ -26,7 +26,7 @@ public class lab42 {
             double b = sc.nextDouble();
             double res = a/b;
             if (b == 0){
-                System.out.println("Division by zero");
+                System.out.printf("Division by zero");
             }
             else{
                 System.out.printf("%.0f / %.0f = %.3f", a, b, res);

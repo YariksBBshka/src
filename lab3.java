@@ -9,8 +9,6 @@ public class lab3 {
         char symbol2 = str2.charAt(0);
         int a = symbol;
         int b = symbol2;
-        System.out.println(Math.abs(a+b));
-        System.out.println(Math.abs(symbol2+symbol));
-        System.out.println((char) (symbol2+symbol));
+        System.out.println(Math.abs(a-b));
     }
 }
